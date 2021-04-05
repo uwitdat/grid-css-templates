@@ -52,3 +52,47 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    font-family: Helvetica;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "one one one one" "two two two six" "three four five six";
+  }
+
+  #one {
+    margin: 6px;
+    background-color: blueviolet;
+    grid-area: one;
+  }
+  #two {
+    margin: 6px;
+    background-color: rgb(57, 70, 59);
+    grid-area: two;
+  }
+
+  #three {
+    margin: 6px;
+    background-color: rgb(187, 139, 107);
+  }
+
+  #four {
+    margin: 6px;
+    background-color: rgb(92, 84, 78);
+  }
+
+  #five {
+    margin: 6px;
+    background-color: rgba(37, 89, 105, 0.438);
+  }
+
+  #six {
+    margin: 6px;
+    background-color: rgba(202, 46, 111, 0.438);
+    grid-area: six;
+  }
+}
